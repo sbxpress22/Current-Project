@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Silo Foods</title>
+        <link rel="stylesheet" href="css/design.css">
+        <script src="scripts/loginValidate.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                    <a href="index.html"><img src="images/Logo.jpg" alt="Logo" width="100" height="100" class ="floatL"></a>
+                    <h4>Welcome to Silo Foods!</h4>
+                    <p class="loginLink"><a href=login.html>Login or Register</a></p>
+            </header>
+                <nav>
+                            <ul>
+                                <li class="navBar"><a href="index.php">Home</a></li>
+                                <li class="navBar"><a href="market.html">Buy from Us</a></li>
+                                <li class="navBar"><a href="sellform.php">Sell to Us</a></li>
+                                <li class="navBar"><a href="about.html">About Us</a></li>
+                                <li class="navBar"><a href="contact.html">Contact Us</a></li>
+                                <li class="navBar"><a href="sitemap.html">Site Map</a></li>
+                                <li class="navBar"><a href="feedback.html">Feedback</a></li>
+                            </ul>
+                </nav>
+                <article>
+                <form id="login" onsubmit="loginValidate()">
+                    <fieldset>
+                        <legend> Log-in </legend>
+                        User Name:
+                        <input type="text" name="username"><br>
+                        Password:
+                        <input type="password" name="password"><br>
+                        <input type="submit" value="Log-in">
+                    </fieldset>
+                </form>
+                <input type="button" value="Forgot Password">
+                <p>--------------------------------------------------------------------------------------------------OR
+                    -------------------------------------------------------------------------------------------------</p>
+                <p> * Denotes Required Field </p>
+                <form id="signup" onsubmit="signupValidate()">
+                    <fieldset>
+                        <legend> Sign-Up </legend>
+                        First Name*:
+                        <input type="text" name="firstname"><br>
+                        Last Name*:
+                        <input type="text" name="lastname"><br>
+                        Email*:
+                        <input type="text" name="email"><br>
+                        User Name*:
+                        <input type="text" name="username"><br>
+                        Password*:
+                        <input type="password" name="password"><br>
+                        Confirm Password*:
+                        <input type="password" name="cpassword"><br>
+                        Affiliated Company:
+                        <input type="text" name="affiliatecompany"><br>
+                        <input type="submit" value="Register">
+                    </fieldset>
+                </form>
+            </article>
+                <footer>
+                    Copyright Silo Foods
+                </footer>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- feedback.html -->
+<!--He Wang-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Silo Foods</title>
+        <link rel="stylesheet" href="css/design.css">
+        <script src="scripts/feedbackValidate.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                    <a href="index.html"><img src="images/Logo.jpg" alt="Logo" width="100" height="100" class ="floatL"></a>
+                    <h4>Welcome to Silo Foods!</h4>
+                    <p class="loginLink"><a href=login.html>Login or Register</a></p>
+            </header>
+                <nav>
+                            <ul>
+                                <li class="navBar"><a href="index.php">Home</a></li>
+                                <li class="navBar"><a href="market.html">Buy from Us</a></li>
+                                <li class="navBar"><a href="sellform.php">Sell to Us</a></li>
+                                <li class="navBar"><a href="about.html">About Us</a></li>
+                                <li class="navBar"><a href="contact.html">Contact Us</a></li>
+                                <li class="navBar"><a href="sitemap.html">Site Map</a></li>
+                                <li class="navBar"><a href="feedback.html">Feedback</a></li>
+                            </ul>
+                </nav>
+                <article>
+                <form id="contact" onsubmit="feedbackValidate()">
+                    <table>
+                        <tr>
+                            <td>Salutation:</td>
+                            <td><select name="salute">
+                                <option>&nbsp;</option>
+                                <option>Mrs.</option>
+                                <option>Ms.</option>
+                                <option>Mr.</option>
+                                <option>Dr.</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td><select name="gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>First Name:</td>
+                            <td><input type="text" name="firstName" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td>
+                            <td><input type="text" name="lastName" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail Address:</td>
+                            <td><input type="text" name="email" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number:</td>
+                            <td><input type="text" name="phone" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Subject:</td>
+                            <td><input type="text" name="subject" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Comments:</td>
+                            <td><textarea name="message" rows="6" cols="30"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Please check here if you wish to receive a reply:
+                            <input type="checkbox" name="reply" value="yes"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Send Feedback"></td>
+                            <td class="RightAligned"><input type="reset"
+                                                        value="Reset Form"></td>
+                        </tr>
+                    </table>
+                </form>
+            </article>
+                <footer>
+                    Copyright Silo Foods
+                </footer>
+        </main>
+    </body>
+</html>
